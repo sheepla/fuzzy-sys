@@ -5,29 +5,8 @@
 
 ## :package: Installation
 
-**Make sure you have [fzf](https://github.com/junegunn/fzf) installed**
-
-```zsh
-# for zplug
-zplug 'NullSense/fuzzy-sys'
-
-# for zgen
-zgen load 'NullSense/fuzzy-sys'
-
-# for antigen
-antigen bundle 'NullSense/fuzzy-sys'
-
-# manually
-# Clone the repository and source it in your shell's rc file.
-```
-
-## Try it out without installing anything
-
-If you want to try `fuzzy-sys` without installing it:
-
 ```bash
-# bash / zsh
-source <(curl -sSL git.io/JteMq)
+curl -LO https://raw.githubusercontent.com/sheepla/fuzzy-sys/master/fuzzy-sys && chmod +x fuzzy-sys
 ```
 
 ## :star: Features
