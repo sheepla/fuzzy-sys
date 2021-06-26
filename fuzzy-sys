@@ -3,9 +3,11 @@
 set -o errexit
 set -o nounset
 
+readonly THIS_CMD="${0##*/}"
+
 help() {
 	cat >&2 <<EOF
-Usage: fuzzy-sys [options]
+Usage: ${THIS_CMD} [options]
 Utility for using systemctl interactively via fzf.
 If no options are given fully interactive mode is launched with system service units being used.
     -u          : work with --user services
@@ -19,8 +21,8 @@ If no options are given fully interactive mode is launched with system service u
     --help      : print this message and exit
 
 Examples:
-    fuzzy-sys -u --edit    : edit a user service
-    fuzzy-sys --start      : start a system service
+    ${THIS_CMD} -u --edit    : edit a user service
+    ${THIS_CMD} --start      : start a system service
 EOF
 }
 
