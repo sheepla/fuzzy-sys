@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -o errexit
+set -o nounset
+
 help() {
 	cat >&2 <<EOF
 Usage: fuzzy-sys [options]
