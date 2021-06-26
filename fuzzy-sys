@@ -1,4 +1,5 @@
-fuzzy-sys() {
+#!/bin/sh
+
 help() {
     cat >&2 <<EOF
 Usage: fuzzy-sys [options]
@@ -149,6 +150,7 @@ sysdisable() {
         done
 }
 
+main() {
 super=system
 while :; do
     case $1 in
@@ -194,3 +196,6 @@ while :; do
     shift
 done
 }
+
+main "${@}"
+exit "${?}"
